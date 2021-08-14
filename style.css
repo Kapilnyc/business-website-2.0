@@ -1,0 +1,360 @@
+*{
+    margin: 0; padding:0;
+    
+}
+#loader{
+    width: 100%;
+    height: 100vh;
+        position:fixed;
+    url('810');
+    z-index: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+      background-color: #000000;
+    background-size: cover;
+}
+
+
+.big_list{
+    width: 100%;
+    overflow: hidden;
+    height: 70px;
+    display: flex;
+    /*position:fixed;*/
+    background-color:black;
+    flex-direction: row;
+    align-items: center;
+    /*border: 1px solid red;*/
+}
+
+
+.logo{
+    width: 20%;
+    font-size: 43PX;
+     font-family: 'Alegreya Sans', ;
+    text-align: center;
+    
+}
+
+
+.list{
+    width: 80%;
+    text-align: right;
+    padding-right: 50px;
+    
+    
+}
+
+
+.list li{
+    display: inline-block;
+    text-transform: uppercase;
+    list-style: none;
+    letter-spacing: 2px;
+    padding-left: 50px;
+}
+
+
+.list li a{
+    color: rgba(255,255,255, .8);
+    text-decoration: none;
+        
+}
+.list a:hover{
+    color: orange;
+}
+
+/* this is end*/
+
+
+.header_content{
+    text-transform: uppercase;
+   /*border: 1px solid red;*/
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    
+    
+    background-attachment: fixed;
+     
+    top: 55%;
+    left: 50%;
+    color: rgba(255,255,255, .8);
+    transform: translate(-50%, -50%);
+        text-align: center;
+
+}
+
+.header_content h3{
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+}
+
+
+.header_content h1{
+     margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 0.7em;
+     
+}
+
+.header_content h1{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate{
+    0%, 100%{
+        color:#fff; filter: blur(2px); 
+    box-shadow: 0 0 10px #00b3ff,
+                    0 0 20px #00b3ff,
+                    0 0 40px #00b3ff,
+                    0 0 80px #00b3ff,
+                    0 0 120px #00b3ff,
+                    0 0 200px #00b3ff,
+                    0 0 400px #00b3ff,
+                     0 0 300px #00b3ff;
+    }
+     5%, 95%{
+        color:#111; filter: blur(0px); 
+         text-shadow: 0 0 10px #00b3ff;
+    }
+}
+
+.header_content h1:nth-child(1){
+    animation-delay: 0s;
+}
+.header_content h1:nth-child(2){
+    animation-delay: 0.25s;
+}
+.header_content h1:nth-child(3){
+    animation-delay: 0.5s;
+}
+.header_content h1:nth-child(4){
+    animation-delay: 0.75s;
+}
+.header_content h1:nth-child(5){
+    animation-delay: 1s;
+}
+.header_content h1:nth-child(6){
+    animation-delay: 1.25s;
+}
+.header_content h1:nth-child(7){
+    animation-delay: 1.5s;
+}
+.header_content h1:nth-child(8){
+    animation-delay: 1.75s;
+}
+
+.header_content button{
+    height: auto;
+    padding: 8px 37px;
+    color: #fff;
+    font-size: 12px;
+    background-color: transparent;
+    margin-right: 20px;
+}
+.header_content button a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+}
+.header_content button:hover{
+    background-color:rgb(131,58,180);
+background: linear-gradient(235deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 0%, rgba(253,53,35,1) 49%, rgba(252,176,69,1) 100%);
+    border: 1px solid white;
+}
+
+
+/* content 1 boxx */
+
+.beep{
+   height:300vh;
+    width:100%;
+    /*bottom: - 200px;*/
+      background-color:#000000;
+      color: rgba(255,255,255, .8);
+    Font-family: 'Dosis' ;
+     border: 2px solid blue
+    position: absolute;
+    font-size: 1.2rem;
+     font-weight: 500;
+    letter-spacing: 0.1em;
+    
+}
+
+.products{
+    
+     width: 45%;
+   /* height: 200px;*/
+    position: absolute;
+    border-radius:10px;
+    top: 110%;
+    left: 50%;
+    font-family: 'Alegreya Sans', ;
+    color: rgba(255,255,255, .8);
+    transform: translate(-50%, -50%);
+        text-align: center;
+    font-size: 55px;
+     filter: blur2px);
+    
+}
+.products:hover{
+    color:#255784;
+    background: #C33764;
+    box-shadow: 0 0 10px #BD3F32, 0 0 40px #BD3F32, 0 0 80px #BD3F32;
+}
+
+.MARKETING{
+    width: 80%;
+   height: 200px;
+    left:30px;
+    right: 30PX;
+     top:900px;
+    position: absolute;
+    border: 2px solid;
+   background: #031321;
+}
+.MARKETING h2 {
+    text-align: center;
+margin-top: 15px;
+}
+.MARKETING p{
+    padding-top:30px;
+    text-align: center;
+}
+/*
+ .MARKETING:before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -1;
+}
+
+
+  .MARKETING:after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(40px);
+}
+*/
+.MARKETING:hover{
+    background: linear-gradient(235deg, #89ff00,#060c21,#00bcd4);
+}
+
+.PROMOTIONAL_ITEMS{
+    width: 80%;
+    height: 200px;
+    right: 30PX;
+    top:1100px;
+    position: absolute;
+     border: 2px solid;
+    background:  #031321;
+    transform:  rotateX(360deg)rotateZ(360deg);
+    transform-style: preserve-3d;
+}
+
+.PROMOTIONAL_ITEMS:hover{
+    background: linear-gradient(235deg,  red, purple);
+}
+.PROMOTIONAL_ITEMS h2{
+    text-align: center;
+margin-top: 15px;
+}
+.PROMOTIONAL_ITEMS p{
+    padding-top:30px;
+    text-align: center;
+}
+
+
+.T_shirts{
+    width: 80%;
+    height: 200px;
+    left: 30;
+    top:1300px;
+     position: absolute;
+        border: 2px solid;
+   background:  #031321;
+}
+.T_shirts:hover{
+   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+}
+ .T_shirts h2{
+    text-align: center;
+margin-top: 15px;
+}
+ .T_shirts p{
+    padding-top:30px;
+    text-align: center;
+}
+/*
+.CARDS{
+    
+    width: 300px;
+   height: 200px;
+    right: 150PX;
+    top: 1300px;
+     position: absolute;
+     border: 2px solid;
+     background: #060c21;
+
+}
+*/
+.BAG_BOXES{
+     width:80%;
+    height: 200px;
+    right:30PX;
+   top: 1501px;
+     position: absolute;
+        border: 2px solid ;
+    background:  #031321;
+}
+.BAG_BOXES:hover{
+   background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+}
+ .BAG_BOXES h2{
+    text-align: center;
+margin-top: 15px;
+}
+  .BAG_BOXES p{
+    padding-top:30px;
+    text-align: center;
+}
+.BRAND_FOOTER{
+     position: fixed;
+  top: 1701px;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center
+}
+
+.contact {
+     top: 2000px;
+    position: absolute;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+width:100%;
+}
+
+
+
